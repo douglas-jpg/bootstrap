@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <title>Grid!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- cada row tem são 12 colunas  -->
+            <!-- quando estrapola a quantidades de coluna nas linhas ela desce pra baixo -->
+            <div class="col-3 h400 bg-info">coluna 1</div>
+            <div class="col-4 h400 bg-warning">coluna 2</div>
+            <div class="col-3 h400 bg-danger">coluna 3</div>
+            <div class="col bg-dark text-white">coluna 4</div>
+        </div>
+        <h2>Exemplo de ultilização do grid</h2>
+        <div class="row">
+            <div class="row">
+                <div class="col bg-info h100">navbar 12 colunas</div>
+            </div>
+            <div class="row">
+                <div class="col-4 bg-warning h400">arside 4 colunas</div>
+                <div class="col-8 bg-danger h400">section 8 colunas</div>
+            </div>
+            <div class="row">
+                <div class="col bg-dark text-white h100">footer 12 colunas</div>
+            </div>
+        </div>
+        <h2>Grid com repansividade</h2>
+        <div class="row">
+            <div class="row">
+                <div class="col-12 bg-info h100">Nav responsivo</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12 h200 bg-warning">arside</div>
+                <div class="col-md-8 col-12 h200 bg-danger">arside</div>
+            </div>
+            <div class="row">
+                <div class="col-12 bg-dark h100 text-white">footer</div>
+            </div>
+        </div>
+        <h2>formatação de colunas</h2>
+        <!-- align-items para alinahr verticalmente de todas  -->
+        <!-- posso usar os brakpoints no aling-items-breakpoints-local  -->
+
+        <!-- para alinhar horizontalmente usa o justify-content  -->
+        <div class="row h400 border bg-dark align-items-center justify-content-between">
+            <!-- para alinhar a propria coluna usa o align-self  -->
+            <div class="col-3 bg-danger h50 border align-self-start">colunas 1</div>
+
+            <!-- offset-1 pode ser ultilizado para andar nas 12 colunas  -->
+            <div class="col-3 bg-danger h50 border ">colunas 2</div>
+
+            <!-- posso mudar as ordem das colunas para qualuer local  -->
+            <!-- pode usar last first e ordem numeradas  -->
+            <div class="col-3 bg-danger h50 border order-first align-self-end">colunas 3</div>
+            <!-- para quebrar as linhas entre as colunas usa a classe .w-100  -->
+        </div>
+        <div class="row h400 bg-dark">
+           <!-- mr margen right auto para colocar uma margem a direitda da div 
+        mx para o eixo x -->
+            <div class="col-3 bg-danger h50 border mr-auto ">colunas 1</div>
+            <div class="col-3 bg-danger h50 border ">colunas 2</div>
+            <div class="col-3 bg-danger h50 border ">colunas 3</div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
